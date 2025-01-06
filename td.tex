@@ -1,0 +1,64 @@
+1. Addition de deux matrices
+Début
+    Lire les dimensions des matrices (lignes, colonnes)
+    Lire la matrice A
+    Lire la matrice B
+    Créer une matrice résultat C de mêmes dimensions
+
+    Pour chaque ligne i de 0 à lignes-1:
+        Pour chaque colonne j de 0 à colonnes-1:
+            C[i][j] = A[i][j] + B[i][j]
+    
+    Afficher la matrice C
+Fin
+
+2. Soustraction de deux matrices
+Début
+    Lire les dimensions des matrices (lignes, colonnes)
+    Lire la matrice A
+    Lire la matrice B
+    Créer une matrice résultat C de mêmes dimensions
+
+    Pour chaque ligne i de 0 à lignes-1:
+        Pour chaque colonne j de 0 à colonnes-1:
+            C[i][j] = A[i][j] - B[i][j]
+    
+    Afficher la matrice C
+Fin
+
+3.Multiplication de deux matrices
+Début
+    Lire les dimensions de la matrice A (lignes_A, colonnes_A)
+    Lire les dimensions de la matrice B (lignes_B, colonnes_B)
+    
+    Si colonnes_A != lignes_B:
+        Afficher "Multiplication impossible"
+    Sinon:
+        Créer une matrice résultat C de dimensions (lignes_A, colonnes_B)
+
+        Pour chaque ligne i de 0 à lignes_A-1:
+            Pour chaque colonne j de 0 à colonnes_B-1:
+                C[i][j] = 0
+                Pour chaque k de 0 à colonnes_A-1:
+                    C[i][j] += A[i][k] * B[k][j]
+        
+        Afficher la matrice C
+Fin
+
+4.Transposée d'une matrice
+
+Algorithme:  Transposée d'une matrice
+Variables: i , j : entier
+Tableau: T[ , ] 
+
+
+Début
+    Lire les dimensions de la matrice A (lignes, colonnes)
+    Créer une matrice résultat C de dimensions (colonnes, lignes)
+
+    Pour chaque ligne i de 0 à lignes-1:
+        Pour chaque colonne j de 0 à colonnes-1:
+            C[j][i] = A[i][j]
+    
+    Afficher la matrice C
+Fin
